@@ -10,7 +10,7 @@
       "git:hexsha": "45456abc190bcf7b81dfc96914b726d7b3053e41",
       "repolex:parseStatus": "parsed",
       "git:tagName": "v0.25.11",
-      "repolex:parsedAt": "2026-04-13T11:43:33.556177+00:00"
+      "repolex:parsedAt": "2026-04-13T11:59:17.350573+00:00"
     },
     {
       "@id": "https://repolex.ai/r/toml-rs/toml/commit/f6346dfd13a2d89831c0d5bbd34ea9eef448201f",
