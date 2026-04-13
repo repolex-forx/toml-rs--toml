@@ -1,0 +1,88 @@
+[2026-04-13T12:13:55Z] === ENRICH ITERATION 1 START | repo=toml-rs/toml sha=45456abc ===
+[2026-04-13T12:13:55Z] [iter=1] PHASE START: enrich repo=toml-rs/toml sha=45456abc runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/45456abc-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/45456abc190bcf7b81dfc96914b726d7b3053e41.nq.gz
+[2026-04-13T12:13:55Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T12:14:06Z] [iter=1] AST store loaded triples=1554301 load_secs=10 mem_mb=891 MB
+[2026-04-13T12:14:06Z] [iter=1] Step 2: Finding LSP targets mem_mb=891 MB
+[2026-04-13T12:14:09Z] [iter=1] LSP targets found call_sites=13036 imports=584 extends=0 implements=278 secs=3
+[2026-04-13T12:14:12Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=891 MB
+[2026-04-13T12:14:21Z] [iter=1] Position index built positions=103577 nodes_with_types=127527 secs=9 mem_mb=891 MB
+[2026-04-13T12:14:21Z] [iter=1] Step 3: Starting LSP resolution mem_mb=891 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T12:14:21Z] [iter=1] Resolving target type target_type=call_site count=13036
+[2026-04-13T12:14:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=crates/toml_parser/src/decoder/string.rs
+[2026-04-13T12:20:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=1 resolved=92 errors=479 current=crates/toml_edit/tests/compliance/parse.rs
+[2026-04-13T12:20:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=2 resolved=156 errors=564 current=crates/toml_parser/src/parser/document.rs
+[2026-04-13T12:28:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=3 resolved=202 errors=1302 current=crates/toml_edit/tests/testsuite/edit.rs
+[2026-04-13T12:32:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=4 resolved=282 errors=1707 current=crates/toml/src/ser/value/map.rs
+[2026-04-13T12:33:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=5 resolved=325 errors=1803 current=crates/toml_edit/src/array.rs
+[2026-04-13T12:35:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.5 files_done=7 resolved=467 errors=1984 current=crates/toml/src/de/deserializer/table.rs
+[2026-04-13T12:36:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.8 files_done=9 resolved=552 errors=2111 current=crates/toml_edit/tests/serde/general.rs
+[2026-04-13T12:37:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=13 resolved=808 errors=2219 current=crates/toml/src/value.rs
+[2026-04-13T12:39:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.8 files_done=14 resolved=957 errors=2408 current=crates/toml/tests/serde/spanned.rs
+[2026-04-13T12:40:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.6 files_done=16 resolved=1049 errors=2483 current=crates/toml_parser/src/decoder/scalar.rs
+[2026-04-13T12:44:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.9 files_done=17 resolved=1059 errors=2904 current=crates/toml_edit/src/value.rs
+[2026-04-13T12:45:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=18 resolved=1087 errors=2980 current=crates/toml/src/map.rs
+[2026-04-13T12:46:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.4 files_done=20 resolved=1158 errors=3046 current=crates/toml_edit/src/repr.rs
+[2026-04-13T12:48:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=23 resolved=1243 errors=3277 current=crates/toml_parser/src/parser/event.rs
+[2026-04-13T12:49:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=25 resolved=1334 errors=3328 current=crates/toml_edit/src/de/mod.rs
+[2026-04-13T12:49:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.0 files_done=27 resolved=1383 errors=3400 current=crates/toml_parser/tests/testsuite/parse_document.rs
+[2026-04-13T12:50:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=28 resolved=1480 errors=3460 current=crates/toml_edit/src/item.rs
+[2026-04-13T12:51:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.2 files_done=29 resolved=1551 errors=3518 current=crates/toml_parser/tests/testsuite/main.rs
+[2026-04-13T12:51:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=30 resolved=1574 errors=3576 current=crates/toml_edit/src/de/table_enum.rs
+[2026-04-13T12:52:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.3 files_done=31 resolved=1605 errors=3628 current=crates/toml_edit/src/parser/inline_table.rs
+[2026-04-13T12:53:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.5 files_done=32 resolved=1642 errors=3750 current=crates/toml/tests/serde/general.rs
+[2026-04-13T12:55:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.3 files_done=34 resolved=1890 errors=3926 current=crates/toml_datetime/src/datetime.rs
+[2026-04-13T12:57:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=35 resolved=1985 errors=4165 current=crates/toml_parser/tests/testsuite/parse_simple_key.rs
+[2026-04-13T12:59:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.2 files_done=37 resolved=2085 errors=4302 current=crates/toml_writer/src/value.rs
+[2026-04-13T13:00:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.3 files_done=39 resolved=2192 errors=4417 current=crates/toml_parser/tests/testsuite/parse_value.rs
+[2026-04-13T13:01:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.5 files_done=40 resolved=2418 errors=4534 current=crates/toml_writer/tests/string.rs
+[2026-04-13T13:02:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.1 files_done=41 resolved=2427 errors=4589 current=crates/toml/src/de/parser/inline_table.rs
+[2026-04-13T13:02:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.8 files_done=42 resolved=2441 errors=4658 current=crates/toml_edit/tests/encoder.rs
+[2026-04-13T13:03:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.7 files_done=44 resolved=2484 errors=4748 current=crates/toml/tests/serde/de_enum.rs
+[2026-04-13T13:04:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.4 files_done=48 resolved=2579 errors=4815 current=crates/toml/src/de/error.rs
+[2026-04-13T13:04:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.0 files_done=49 resolved=2624 errors=4877 current=crates/toml_edit/src/ser/map.rs
+[2026-04-13T13:05:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=50 resolved=2651 errors=4980 current=crates/toml/tests/serde/de_errors.rs
+[2026-04-13T13:06:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.7 files_done=52 resolved=2724 errors=5043 current=crates/toml_parser/src/lexer/test.rs
+[2026-04-13T13:07:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.5 files_done=53 resolved=2883 errors=5122 current=crates/toml_edit/src/ser/key.rs
+[2026-04-13T13:08:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=55 resolved=2940 errors=5189 current=crates/toml_edit/tests/serde/ser_tables_last.rs
+[2026-04-13T13:09:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=58 resolved=2991 errors=5313 current=crates/toml_edit/src/de/table.rs
+[2026-04-13T13:10:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.3 files_done=60 resolved=3004 errors=5394 current=crates/toml_edit/tests/serde/ser_key.rs
+[2026-04-13T13:11:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.3 files_done=61 resolved=3076 errors=5498 current=crates/toml/src/macros.rs
+[2026-04-13T13:12:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.5 files_done=63 resolved=3087 errors=5616 current=crates/toml_edit/tests/decoder_compliance.rs
+[2026-04-13T13:12:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.0 files_done=67 resolved=3160 errors=5666 current=crates/toml/src/de/parser/detable.rs
+[2026-04-13T13:13:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.8 files_done=69 resolved=3212 errors=5739 current=crates/toml_datetime/src/ser.rs
+[2026-04-13T13:14:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.4 files_done=71 resolved=3249 errors=5803 current=crates/toml_parser/src/lexer/mod.rs
+[2026-04-13T13:15:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.0 files_done=72 resolved=3266 errors=5959 current=crates/toml_edit/src/table.rs
+[2026-04-13T13:16:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.0 files_done=73 resolved=3364 errors=6057 current=crates/toml/src/ser/value/array.rs
+[2026-04-13T13:17:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.6 files_done=75 resolved=3432 errors=6114 current=crates/toml/src/de/parser/value.rs
+[2026-04-13T13:18:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.3 files_done=77 resolved=3509 errors=6183 current=crates/toml_parser/src/debug.rs
+[2026-04-13T13:18:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.0 files_done=80 resolved=3516 errors=6251 current=crates/toml/src/ser/document/strategy.rs
+[2026-04-13T13:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=82 resolved=3563 errors=6331 current=crates/toml_edit/src/index.rs
+[2026-04-13T13:20:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=85 resolved=3587 errors=6387 current=crates/toml_edit/src/parser/array.rs
+[2026-04-13T13:20:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.0 files_done=86 resolved=3606 errors=6445 current=crates/toml/tests/serde/ser_enum.rs
+[2026-04-13T13:21:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.8 files_done=87 resolved=3672 errors=6524 current=crates/toml_edit/src/array_of_tables.rs
+[2026-04-13T13:22:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.6 files_done=89 resolved=3710 errors=6605 current=crates/toml_edit/src/error.rs
+[2026-04-13T13:23:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.2 files_done=90 resolved=3755 errors=6664 current=crates/toml_edit/src/document.rs
+[2026-04-13T13:23:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.0 files_done=93 resolved=3813 errors=6743 current=crates/serde_spanned/src/de.rs
+[2026-04-13T13:25:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=95 resolved=3858 errors=6897 current=crates/toml/src/de/parser/devalue.rs
+[2026-04-13T13:26:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.3 files_done=97 resolved=3930 errors=6964 current=crates/toml_edit/src/visit_mut.rs
+[2026-04-13T13:26:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.8 files_done=99 resolved=3942 errors=7016 current=crates/toml/src/de/parser/key.rs
+[2026-04-13T13:27:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.5 files_done=101 resolved=3961 errors=7083 current=crates/benchmarks/benches/1-map.rs
+[2026-04-13T13:28:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.2 files_done=103 resolved=3989 errors=7155 current=crates/toml_edit/src/parser/debug.rs
+[2026-04-13T13:28:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.8 files_done=109 resolved=4123 errors=7210 current=crates/toml/src/ser/value/mod.rs
+[2026-04-13T13:29:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.5 files_done=111 resolved=4150 errors=7282 current=crates/toml/examples/toml2json.rs
+[2026-04-13T13:30:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=115 resolved=4202 errors=7343 current=crates/toml_edit/tests/compliance/invalid.rs
+[2026-04-13T13:30:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.9 files_done=117 resolved=4233 errors=7418 current=crates/toml/tests/serde/ser_to_string.rs
+[2026-04-13T13:31:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.5 files_done=120 resolved=4256 errors=7476 current=crates/toml_edit/src/ser/value.rs
+[2026-04-13T13:32:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.2 files_done=124 resolved=4307 errors=7544 current=crates/toml_edit/tests/encoder_compliance.rs
+[2026-04-13T13:32:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.8 files_done=130 resolved=4358 errors=7601 current=crates/toml/src/de/parser/dearray.rs
+[2026-04-13T13:33:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.6 files_done=136 resolved=4390 errors=7680 current=crates/serde_spanned/src/spanned.rs
+[2026-04-13T13:34:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.2 files_done=144 resolved=4466 errors=7737 current=crates/toml_writer/src/key.rs
+[2026-04-13T13:34:24Z] [iter=1] Target type resolved target_type=call_site resolved=4490 errors=7761 secs=4803 mem_mb=891 MB
+[2026-04-13T13:34:24Z] [iter=1] Resolving target type target_type=import_statement count=584
+[2026-04-13T13:34:38Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=80.7 files_done=24 resolved=152 errors=0 current=crates/serde_spanned/src/spanned.rs
+[2026-04-13T13:34:45Z] [iter=1] Target type resolved target_type=import_statement resolved=566 errors=0 secs=21 mem_mb=891 MB
+[2026-04-13T13:34:45Z] [iter=1] Resolving target type target_type=implements_clause count=278
+[2026-04-13T13:34:59Z] [iter=1] Target type resolved target_type=implements_clause resolved=278 errors=0 secs=15 mem_mb=891 MB
+[2026-04-13T13:35:22Z] [iter=1] Step 5: Writing final enrichment file triples=110008
+[2026-04-13T13:35:24Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/45456abc190bcf7b81dfc96914b726d7b3053e41.nq.gz size_kb=2300
+[2026-04-13T13:35:24Z] [iter=1] PHASE END: enrich elapsed_s=4889 elapsed_min=81.5 total_triples=110008
